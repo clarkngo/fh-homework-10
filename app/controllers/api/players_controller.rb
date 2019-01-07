@@ -26,7 +26,9 @@ module API
 
     # DELETE /api/players/1
     def destroy
-
+      player = Player.find(params[:id])
+      player.destroy
+      render json: player
     end
 
     private

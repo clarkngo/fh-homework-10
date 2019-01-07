@@ -2,7 +2,7 @@
 
 ## Due Date
 
-Thursday, December 13, 2018 @ 3:00 PM
+Wednesday, January 9, 2019 @ 4:00 PM
 
 ## Goals
 

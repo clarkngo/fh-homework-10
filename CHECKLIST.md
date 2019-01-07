@@ -36,7 +36,7 @@
 
 - [ ] PUT request
 
-- [ ] DEL request
+- [X] DEL request
 
 #### Reminder: Solution should exist in `part-01-initial-api` branch
 

@@ -1,4 +1,16 @@
-### Solar System Exploration, 1950s – 1960s
+### Checklist for fh-homework-10
+
+Repository configuration
+
+- [x] Create a repository named `fh-homework-10` in GitHub
+
+Installations 
+
+- [x] Installed Postman Application
+
+Populating the database
+
+- [x] Generate 50 players using `Faker` gem
 
 Functionalities
 
@@ -12,6 +24,20 @@ Functionalities
 
   - [ ] deleting player
 
-Installations 
+Tests
 
-- [x] Installed Postman 
+- [ ] pass all tests
+
+Utilize Postman Application
+
+- [x] GET request
+
+- [ ] POST request
+
+- [ ] PUT request
+
+- [ ] DEL request
+
+
+
+

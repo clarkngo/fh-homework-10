@@ -9,12 +9,21 @@ module API
 
     # GET /api/players/1
     def show
-      render json: set_player
+      set_player
+      if @player.valid?
+        render json: @player
+      else 
+      end
     end
 
     # POST /api/players
     def create
-      player = Player.create(player_params)
+      @player = Player.create(player_params)
+      if @player.valid?
+        render json: @player
+      else 
+        render :new, status: :unprocessable_entity
+      end
     end
 
     # PATCH/PUT /api/players/1

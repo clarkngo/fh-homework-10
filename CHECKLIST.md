@@ -1,18 +1,18 @@
 ### Checklist for fh-homework-10
 
-Repository configuration
+#### Repository configuration
 
 - [x] Create a repository named `fh-homework-10` in GitHub
 
-Installations 
+#### Installations 
 
 - [x] Installed Postman Application
 
-Populating the database
+#### Populating the database
 
 - [x] Generate 50 players using `Faker` gem
 
-Functionalities
+#### Functionalities
 
   - [ ] creating player
 
@@ -24,11 +24,11 @@ Functionalities
 
   - [ ] deleting player
 
-Tests
+#### Tests
 
 - [ ] pass all tests
 
-Utilize Postman Application
+#### Utilize Postman Application
 
 - [x] GET request
 
@@ -38,6 +38,6 @@ Utilize Postman Application
 
 - [ ] DEL request
 
-Reminder Solution should exist in `part-01-initial-api` branch
+#### Reminder: Solution should exist in `part-01-initial-api` branch
 
 

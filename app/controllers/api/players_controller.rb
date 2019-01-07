@@ -9,26 +9,26 @@ module API
 
     # GET /api/players/1
     def show
-      render json: Player.find(params[:id])
+      render json: set_player
     end
 
     # POST /api/players
     def create
-
+      player = Player.create(player_params)
     end
 
     # PATCH/PUT /api/players/1
     def update
-      player = Player.find(params[:id])
-      player.update_attributes(player_params)
-      render json: player
+      set_player
+      @player.update_attributes(player_params)
+      render json: @player
     end
 
     # DELETE /api/players/1
     def destroy
-      player = Player.find(params[:id])
-      player.destroy
-      render json: player
+      set_player
+      @player.destroy
+      render json: @player
     end
 
     private

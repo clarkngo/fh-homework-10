@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem "factory_bot_rails"
+
+# required update to remove vulnerabilities
 gem "activejob", ">= 5.2.1.1"
 gem "activestorage", ">= 5.2.1.1"
 gem "ffi", ">= 1.9.24"

@@ -251,11 +251,13 @@ Rails Guides - http://guides.rubyonrails.org/index.html
 ## Creating Rails API application
 
 ```bash
-$ cd fh-homework-10-MM.DD.YYYY
-$ git init
-$ git add .
-$ git commit -am 'Initial commit'
-$ git checkout -b part-01-initial-api
+unzip fh-homework-AB-MM.DD.YYYY.zip
+mv fh-homework-AB-MM.DD.YYYY fh-homework-AB
+cd fh-homework-AB
+git init
+git add .
+git commit -am 'Initial commit'
+git checkout -b part-01-initial-api
 ```
 
 Note: The solution for this homework should exist within the branch,

@@ -4,27 +4,29 @@ module API
 
     # GET /api/players
     def index
-      # implement your code here
+      render json: Player.order(:id)
     end
 
     # GET /api/players/1
     def show
-      # implement your code here
+      render json: Player.find(params[:id])
     end
 
     # POST /api/players
     def create
-      # implement your code here
+
     end
 
     # PATCH/PUT /api/players/1
     def update
-      # implement your code here
+      player = Player.find(params[:id])
+      player.update_attributes(player_params)
+      render json: player
     end
 
     # DELETE /api/players/1
     def destroy
-      # implement your code here
+
     end
 
     private

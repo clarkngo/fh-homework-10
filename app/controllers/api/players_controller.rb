@@ -14,8 +14,7 @@ module API
 
     # POST /api/players
     def create
-      player = Player.create(player_params)
-      render json: player
+
     end
 
     # PATCH/PUT /api/players/1
@@ -27,8 +26,7 @@ module API
 
     # DELETE /api/players/1
     def destroy
-      player = Player.find(params[:id])
-      player.destroy
+
     end
 
     private

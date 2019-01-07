@@ -1,8 +1,9 @@
-# <Project Name>
+# fh-homework-10
 
-<Project Description>
+fh-homework-10
 
-This app powers <Project Name> located [here](Heroku Project URL)
+## Soon!
+This app powers fh-homework-10 located [here](Heroku Project URL)
 
 ## Getting Started
 
@@ -64,12 +65,12 @@ $ rails s
 
 Bug reports and feature requests can be filed with the rest for the Ruby on Rails project here:
 
-* [File Bug Reports and Features](https://github.com/<user-name>/<project-repo>/issues)
+* [File Bug Reports and Features](https://github.com/clarkngo/fh-homework-10/issues)
 
 ## License
 
-<Project Name> is released under the [MIT license](https://mit-license.org).
+fh-homework-10 is released under the [MIT license](https://mit-license.org).
 
 ## Copyright
 
-copyright:: (c) Copyright 2018 <First Name> <Last Name>. All Rights Reserved.
+copyright:: (c) Copyright 2018 Clark Ngo. All Rights Reserved.

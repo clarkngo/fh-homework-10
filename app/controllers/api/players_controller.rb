@@ -9,10 +9,10 @@ module API
 
     # GET /api/players/1
     def show
-      set_player
-      if @player.valid?
+      if @player.present?
         render json: @player
       else 
+        render :show, status: :unprocessable_entity
       end
     end
 
@@ -20,7 +20,7 @@ module API
     def create
       @player = Player.create(player_params)
       if @player.valid?
-        render json: @player
+        render json: @player, status: :created
       else 
         render :new, status: :unprocessable_entity
       end
@@ -28,16 +28,22 @@ module API
 
     # PATCH/PUT /api/players/1
     def update
-      set_player
       @player.update_attributes(player_params)
-      render json: @player
+      if @player.valid?
+        render json: @player
+      else 
+        render :edit, status: :unprocessable_entity
+      end
     end
 
     # DELETE /api/players/1
     def destroy
-      set_player
-      @player.destroy
-      render json: @player
+      if @player.present?
+         @player.destroy
+        render json: @player
+      else
+        render :destroy, status: :unprocessable_entity
+      end
     end
 
     private
